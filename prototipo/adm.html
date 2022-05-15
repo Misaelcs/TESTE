@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <logo class="logo">Ban.<span>CO</span></logo>
+      <ul>
+        <li>Localidades</li>
+        <li>Administrador</li>
+      </ul>
+    </header>
+
+    <div class="main-container cadastro">
+      <div class="title-cadastro">
+        <h1>Cadastre, atualize <br />ou exclua localidades</h1>
+        <p>Por favor preencha os campos ao lado</p>
+      </div>
+      <div class="form-cadastro">
+        <div class="card form">
+          <form action="">
+            <div class="input-container">
+              <input id="cidade" type="text" name="cidade" required="" />
+              <label for="cidade">Localidade</label>
+            </div>
+            <div class="input-container">
+              <input
+                id="uf"
+                type="text"
+                name="uf"
+                required=""
+                maxlength="2"
+                minlength="1"
+              />
+              <label for="">UF</label>
+            </div>
+
+            <div class="input-container">
+              <input id="hab" type="text" name="habitantes" required="" />
+              <label for="">Habitantes</label>
+            </div>
+            <div class="input-container">
+              <input
+                id="qtdClientes"
+                type="text"
+                name="qtdClientes"
+                required=""
+              />
+              <label for="">Clientes</label>
+            </div>
+            <div class="input-container">
+              <textarea
+                name="Informações"
+                type="text"
+                id="info"
+                cols="70"
+                rows="10"
+                required=""
+              ></textarea>
+              <label for=""
+                >Informações sobre o progresso da operação na localidade.</label
+              >
+            </div>
+            <div class="input-container">
+              <input
+                id="auth_id"
+                type="text"
+                name="auth_id"
+                required=""
+                maxlength="5"
+                minlength="4"
+              />
+              <label for="">ID autenticador</label>
+            </div>
+
+            <button type="submit">Salvar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer>Desenvolvido por <span>Misael S.</span></footer>
+  </body>
+</html>
