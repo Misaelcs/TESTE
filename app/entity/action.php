@@ -24,7 +24,7 @@ if(isset($_REQUEST['action_type']) && !empty($_REQUEST['action_type'])){
           );
 
         /** aciona a função insert dentro da classe db passando as infos atribuidas a $userData */
-        if(is_string($userData['NomeCidade'] && is_numeric($userData['PopulacaoCidade']) && is_numeric($userData['ClientelaCidade']) && is_string($userData['CidadeInformacao'])))
+        if(is_string($userData['NomeCidade']) && is_numeric($userData['PopulacaoCidade']) && is_numeric($userData['ClientelaCidade']) && is_string($userData['CidadeInformacao']))
         {
           $insert = $db->insert($tblName,$userData);
         }
